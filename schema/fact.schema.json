@@ -8,7 +8,11 @@
     "observed_at",
     "category",
     "fact",
-    "source_id"
+    "source_id",
+    "valid_as_of",
+    "freshness_class",
+    "status",
+    "schema_version"
   ],
   "properties": {
     "id": {
@@ -92,6 +96,46 @@
         "string",
         "null"
       ]
+    },
+    "valid_as_of": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "expires_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "superseded_by": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "freshness_class": {
+      "enum": [
+        "REALTIME",
+        "FAST",
+        "PERIODIC",
+        "SLOW",
+        "STATIC"
+      ]
+    },
+    "status": {
+      "enum": [
+        "active",
+        "stale",
+        "unverified",
+        "superseded",
+        "corrected",
+        "retracted",
+        "conflict"
+      ]
+    },
+    "schema_version": {
+      "type": "string"
     }
   },
   "additionalProperties": true

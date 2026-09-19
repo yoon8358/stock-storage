@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "effective_date": "2026-09-20",
+  "timezone": "Asia/Seoul",
+  "repository_role": "temporal_knowledge_ledger",
+  "current_claim_requires_revalidation": true,
+  "append_only_preferred": true,
+  "separate_fact_and_assessment": true,
+  "require_source_for_evidence": true,
+  "freshness_classes": {
+    "REALTIME": {"ttl_seconds": 0, "rule": "revalidate_at_analysis_time"},
+    "FAST": {"ttl_seconds": 86400, "rule": "revalidate_before_current_decision"},
+    "PERIODIC": {"ttl_seconds": 2592000, "rule": "confirm_latest_reporting_period"},
+    "SLOW": {"ttl_seconds": 7776000, "rule": "check_for_material_change_before_important_decision"},
+    "STATIC": {"ttl_seconds": null, "rule": "revalidate_on_error_signal"}
+  },
+  "required_temporal_fields": ["observed_at", "valid_as_of"],
+  "optional_temporal_fields": ["event_date", "expires_at", "superseded_by"],
+  "prohibited_current_evidence_status": ["retracted", "superseded", "expired"],
+  "source_priority": ["regulator", "sec", "company", "earnings_call", "data_provider", "research", "news", "other"]
+}

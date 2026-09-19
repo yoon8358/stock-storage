@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Stock Event",
+  "type": "object",
+  "required": [
+    "id",
+    "ticker",
+    "event_date",
+    "event_type",
+    "summary",
+    "source_ids"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "ticker": {
+      "type": "string"
+    },
+    "event_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "event_type": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "importance": {
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ]
+    },
+    "status": {
+      "enum": [
+        "announced",
+        "scheduled",
+        "completed",
+        "cancelled",
+        "unknown"
+      ]
+    },
+    "themes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

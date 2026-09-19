@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Stock Fact",
+  "type": "object",
+  "required": [
+    "id",
+    "ticker",
+    "observed_at",
+    "category",
+    "fact",
+    "source_id"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "ticker": {
+      "type": "string"
+    },
+    "observed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "event_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "category": {
+      "type": "string"
+    },
+    "topic": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "fact": {
+      "type": "string"
+    },
+    "direction": {
+      "enum": [
+        "positive",
+        "negative",
+        "neutral",
+        "mixed",
+        "unknown"
+      ]
+    },
+    "importance": {
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ]
+    },
+    "confidence": {
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "themes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "related_tickers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "thesis_effect": {
+      "enum": [
+        "strengthen",
+        "weaken",
+        "neutral",
+        "unknown"
+      ]
+    },
+    "assessment": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

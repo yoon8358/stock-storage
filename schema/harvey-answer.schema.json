@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Harvey Answer Log Entry",
+  "type": "object",
+  "required": [
+    "answer_id",
+    "answered_at",
+    "question",
+    "answer",
+    "tickers",
+    "themes"
+  ],
+  "properties": {
+    "answer_id": {
+      "type": "string"
+    },
+    "answered_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "question": {
+      "type": "string"
+    },
+    "answer": {
+      "type": "string"
+    },
+    "tickers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "themes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "data_as_of": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "assessment_status": {
+      "enum": [
+        "historical",
+        "current_at_answer_time"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

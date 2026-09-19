@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Source",
+  "type": "object",
+  "required": [
+    "id",
+    "url",
+    "retrieved_at",
+    "source_type"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "title": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "publisher": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "published_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "retrieved_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "source_type": {
+      "enum": [
+        "company",
+        "sec",
+        "regulator",
+        "earnings_call",
+        "news",
+        "research",
+        "data_provider",
+        "other"
+      ]
+    },
+    "primary_source": {
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-20T08:49:23+09:00",
+  "return_objective": {
+    "monthly_expected_return_pct": 10,
+    "note": "목표/기대치이며 매수 할당량이나 위험 확대 트리거로 사용하지 않음"
+  },
+  "horizon": {
+    "holding_period": "unlimited",
+    "exit_basis": "investment_thesis_invalidated"
+  },
+  "risk_profile": {
+    "position_sizing": "투입 금액이 클수록 낮은 위험, 적을수록 높은 위험 허용",
+    "drawdown_rule": "thesis가 살아있는 한 가격 하락 자체로 매도하지 않음",
+    "stop_loss_rule": "투자 논리가 훼손되면 공포가 확대되기 전에 빠르게 정리",
+    "max_leverage_portfolio_pct": 40
+  },
+  "interests": {
+    "experience": [
+      "semiconductors",
+      "AI"
+    ],
+    "expansion_goal": "반도체/AI 외 산업으로 투자 범위 확대",
+    "preferred_setups": [
+      "확실한 기업의 조정 매수",
+      "시장이 충분히 알아보지 못한 기업 발굴",
+      "큰 산업 변화에 올라타는 투자"
+    ],
+    "knowledge_gap": [
+      "반도체/AI 외 산업 지식 확대 필요",
+      "비트코인 가격 상승·하락 동인에 대한 이해 부족"
+    ]
+  },
+  "manager_mandate": {
+    "style": "active_challenge",
+    "instruction": "사용자의 견해에 맞추지 말고 근거가 약하거나 포트폴리오 위험이 크면 적극적으로 지적한다.",
+    "decision_authority": "사용자가 최종 투자 결정을 내림"
+  },
+  "portfolio_snapshot": {
+    "as_of": "2026-09-20T08:49:23+09:00",
+    "approx_total_assets_krw": 25000000,
+    "currency_form": "USD holdings",
+    "positions": [
+      {
+        "asset": "SOXL",
+        "shares": 110,
+        "avg_cost_usd": 131.4,
+        "user_reported_return_pct": -6.6
+      },
+      {
+        "asset": "SpaceX",
+        "shares": 5,
+        "user_reported_return_pct": -3.4
+      }
+    ],
+    "note": "보유현황과 수익률은 사용자 제공 스냅샷이며 현재값으로 재사용하기 전 재확인 필요"
+  }
+}

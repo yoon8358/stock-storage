@@ -1,7 +1,7 @@
 # INDEX
 
-자동 생성: 2026-09-20 03:02 UTC  
-총 18개 파일. AI/도구는 이 파일의 링크를 따라 개별 파일을 읽는다.
+자동 생성: 2026-09-20 08:58 UTC  
+총 19개 파일. AI/도구는 이 파일의 링크를 따라 개별 파일을 읽는다.
 
 ## (root)
 
@@ -33,6 +33,7 @@
 
 ## research/screens
 
+- [research/screens/2026-09-20-ai-semiconductor-hidden.json](https://github.com/yoon8358/stock-storage/blob/main/research/screens/2026-09-20-ai-semiconductor-hidden.json) · [raw](https://raw.githubusercontent.com/yoon8358/stock-storage/main/research/screens/2026-09-20-ai-semiconductor-hidden.json) · 20,932 B
 - [research/screens/2026-09-20-hidden-quality-growth.json](https://github.com/yoon8358/stock-storage/blob/main/research/screens/2026-09-20-hidden-quality-growth.json) · [raw](https://raw.githubusercontent.com/yoon8358/stock-storage/main/research/screens/2026-09-20-hidden-quality-growth.json) · 14,949 B
 - [research/screens/2026-09-20-us-growth-entry.json](https://github.com/yoon8358/stock-storage/blob/main/research/screens/2026-09-20-us-growth-entry.json) · [raw](https://raw.githubusercontent.com/yoon8358/stock-storage/main/research/screens/2026-09-20-us-growth-entry.json) · 14,676 B
 

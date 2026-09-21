@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "report_type": "portfolio_risk_assessment",
+  "ticker": "SOXL",
+  "exchange": "NYSE Arca",
+  "observed_at": "2026-09-21T08:39:36Z",
+  "trade_executed": false,
+  "user_decision": null,
+  "privacy_note": "No brokerage screenshot, account identifier, or new account balance is published. Quantities in the assessment are proposed, not executed trades.",
+  "sources": [
+    {"id":"profile-20260920-read-20260921","url":"https://github.com/yoon8358/stock-storage/blob/main/investor/INVESTOR_PROFILE.md","title":"Investor Profile (updated 2026-09-20)","publisher":"User-provided investment policy recorded in stock-storage","published_at":"2026-09-20","retrieved_at":"2026-09-21T08:39:36Z","source_type":"other","primary_source":true},
+    {"id":"direxion-soxl-20260921","url":"https://www.direxion.com/product/daily-semiconductor-bull-bear-3x-etfs","title":"Daily Semiconductor Bull and Bear 3X ETFs","publisher":"Direxion","published_at":null,"retrieved_at":"2026-09-21T08:39:36Z","source_type":"company","primary_source":true},
+    {"id":"reuters-market-20260921","url":"https://www.reuters.com/world/china/global-markets-global-markets-2026-09-21/","title":"Tech lifts share markets in Asia as oil slips","publisher":"Reuters","published_at":"2026-09-21","retrieved_at":"2026-09-21T08:39:36Z","source_type":"news","primary_source":false},
+    {"id":"finra-extended-hours-20260921","url":"https://www.finra.org/rules-guidance/rulebooks/finra-rules/2265","title":"2265. Extended Hours Trading Risk Disclosure","publisher":"FINRA","published_at":null,"retrieved_at":"2026-09-21T08:39:36Z","source_type":"regulator","primary_source":true},
+    {"id":"finance-soxl-20260921","url":"tool://web/finance/SOXL","title":"Dedicated finance tool SOXL quote","publisher":"Web finance tool; underlying provider unspecified","published_at":null,"retrieved_at":"2026-09-21T08:39:36Z","source_type":"data_provider","primary_source":false,"reported_latest_trade_time":"2026-09-21T08:21:11Z","reported_price_usd":123.67},
+    {"id":"fidelity-soxl-20260921","url":"https://digital.fidelity.com/prgw/digital/research/quote/dashboard/summary?symbol=SOXL","title":"SOXL quote dashboard","publisher":"Fidelity","published_at":null,"retrieved_at":"2026-09-21T08:39:36Z","source_type":"data_provider","primary_source":true,"reported_price_usd":123.67,"note":"Dashboard also labels 123.67 as previous close. Does not independently establish the current executable extended-hours price."}
+  ],
+  "facts": [
+    {"id":"soxl-policy-cap-20260921","ticker":"SOXL","observed_at":"2026-09-21T08:39:36Z","event_date":"2026-09-20","category":"investment_policy","fact":"The investor profile records a leverage exposure ceiling of 40% of total assets; it does not explicitly distinguish ETF market-value allocation from look-through notional exposure.","source_id":"profile-20260920-read-20260921","valid_as_of":"2026-09-20T00:00:00+09:00","freshness_class":"SLOW","status":"active","schema_version":"1.0.0"},
+    {"id":"soxl-daily-target-20260921","ticker":"SOXL","observed_at":"2026-09-21T08:39:36Z","event_date":null,"category":"fund_structure","fact":"SOXL targets 300% of its benchmark's daily return before fees and expenses, not three times its cumulative return over periods longer than one day; the objective is not guaranteed.","source_id":"direxion-soxl-20260921","valid_as_of":"2026-09-21T08:39:36Z","freshness_class":"SLOW","status":"active","schema_version":"1.0.0"},
+    {"id":"nasdaq-futures-report-20260921","ticker":"SOXL","observed_at":"2026-09-21T08:39:36Z","event_date":"2026-09-21","category":"market_context","fact":"Reuters reported Nasdaq futures up 0.6%; this is a report-time snapshot, not a live quote.","source_id":"reuters-market-20260921","valid_as_of":"2026-09-21T08:39:36Z","freshness_class":"REALTIME","status":"active","schema_version":"1.0.0"},
+    {"id":"brent-report-20260921","ticker":"SOXL","observed_at":"2026-09-21T08:39:36Z","event_date":"2026-09-21","category":"market_context","fact":"Reuters reported Brent down 1.7%; this is a report-time snapshot, not a live quote.","source_id":"reuters-market-20260921","valid_as_of":"2026-09-21T08:39:36Z","freshness_class":"REALTIME","status":"active","schema_version":"1.0.0"},
+    {"id":"risk-context-report-20260921","ticker":"SOXL","observed_at":"2026-09-21T08:39:36Z","event_date":"2026-09-21","category":"market_context","fact":"Reuters reported continuing interest-rate and Middle East risks; a completed peace agreement is not established by this report.","source_id":"reuters-market-20260921","valid_as_of":"2026-09-21T08:39:36Z","freshness_class":"FAST","status":"active","schema_version":"1.0.0"},
+    {"id":"extended-hours-risk-20260921","ticker":"SOXL","observed_at":"2026-09-21T08:39:36Z","event_date":null,"category":"execution_risk","fact":"FINRA identifies potentially lower liquidity, higher volatility, wider spreads, unlinked prices and partial or failed executions in extended-hours trading.","source_id":"finra-extended-hours-20260921","valid_as_of":"2026-09-21T08:39:36Z","freshness_class":"SLOW","status":"active","schema_version":"1.0.0"},
+    {"id":"soxl-provider-quote-conflict-20260921","ticker":"SOXL","observed_at":"2026-09-21T08:39:36Z","event_date":"2026-09-21","category":"price","fact":"The dedicated finance tool returned 123.67 USD, which differs from the 131.61 USD reference supplied in this conversation. The executable current quote was not independently reconciled.","source_id":"finance-soxl-20260921","corroborating_source_ids":["fidelity-soxl-20260921"],"valid_as_of":"2026-09-21T08:21:11Z","freshness_class":"REALTIME","status":"conflict","schema_version":"1.0.0"}
+  ],
+  "assessment": {
+    "author": "Harvey / ChatGPT",
+    "decision_type": "Advice only; not an order or a prediction of today's high",
+    "conclusion": "Reduce excessive leverage first, then observe with a smaller remaining position. Recovering cost basis is not itself a market signal.",
+    "illustrative_plan": "Propose reducing 60 of 110 shares and retaining at most 50, conditional on executable prices and the portfolio leverage ceiling. Do not treat this as an executed sale.",
+    "cap_interpretation": "Calculations provisionally interpret 40% as the combined market value of leveraged ETFs divided by current total investment assets including cash. If the policy instead means look-through notional exposure, substantially fewer SOXL shares are permissible.",
+    "sizing_reference_price_usd": 131.61,
+    "reference_price_status": "User-supplied reference only; not independently verified as a current executable price",
+    "illustrative_sale_gross_usd": 7896.60,
+    "illustrative_remaining_value_usd": 6580.50,
+    "minimum_total_assets_usd_for_remaining_position_at_40pct": 16451.25,
+    "cap_condition": "The minimum total-assets calculation assumes no other leveraged holdings. Use current same-currency portfolio values and round permissible shares down.",
+    "scenario_not_forecast": {
+      "assumed_subsequent_soxl_move_pct": -10,
+      "110_share_value_change_usd": -1447.71,
+      "50_share_value_change_usd": -658.05,
+      "assumptions": "Reference price 131.61 USD; ignores fees and taxes; cash proceeds not reinvested. Positive moves also provide less upside after reduction."
+    },
+    "execution_notes": "Verify the actual bid, spread, order-session eligibility and estimated proceeds in the brokerage app. Prefer price-controlled limit orders, recognizing non-execution risk. Do not wait for an additional profit target merely to correct a violated allocation ceiling.",
+    "remaining_position_notes": "Respect the allocation ceiling regardless of whether the sector thesis survives. No technical support, stop price or upward price target was verified in this assessment.",
+    "uncertainty": "Short-term direction is uncertain. This review does not establish that the rebound will continue, reverse, or persist into the regular session."
+  }
+}

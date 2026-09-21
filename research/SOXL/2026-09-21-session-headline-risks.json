@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "report_type": "session_headline_risk_review",
+  "ticker": "SOXL",
+  "observed_at": "2026-09-21T09:17:50Z",
+  "session": "US regular session on 2026-09-21",
+  "trade_executed": false,
+  "privacy_note": "No account screenshot, balance, identifiers or updated holdings are included.",
+  "sources": [
+    {"id":"hani-diplomacy-20260920","url":"https://www.hani.co.kr/arti/international/international_general/1278681.html","title":"이란, 미국에 종전 조건 제시…미-중 정상회담 앞두고 외교 재가동","publisher":"한겨레","published_at":"2026-09-20T19:26:00+09:00","retrieved_at":"2026-09-21T09:17:50Z","source_type":"news","primary_source":false},
+    {"id":"reuters-threats-20260920","url":"https://www.reuters.com/world/asia-pacific/iran-warns-against-new-escalation-by-us-allies-2026-09-20/","title":"Iran and US trade threats after Houthi attacks escalate regional conflict","publisher":"Reuters","published_at":"2026-09-20T13:19:00Z","retrieved_at":"2026-09-21T09:17:50Z","source_type":"news","primary_source":false},
+    {"id":"reuters-oil-20260921-review","url":"https://www.reuters.com/business/energy/oil-rises-after-houthi-attack-saudi-capital-2026-09-20/","title":"Oil prices slide on hopes of diplomacy in Iran war","publisher":"Reuters","published_at":"2026-09-20T22:10:00Z","retrieved_at":"2026-09-21T09:17:50Z","source_type":"news","primary_source":false,"note":"Article was updated with September 21 reporting; precise latest update timestamp was not exposed. Quoted Brent snapshot is 06:55 UTC September 21."},
+    {"id":"ap-markets-20260921-review","url":"https://apnews.com/article/1f1a267bf4556c01513f506914eb6359","title":"Stocks advance after Bessent says talks with China were successful before Trump-Xi meeting","publisher":"Associated Press","published_at":"2026-09-21","retrieved_at":"2026-09-21T09:17:50Z","source_type":"news","primary_source":false,"note":"Search result summary was available; direct page fetch failed. No exact live bond yield is asserted."},
+    {"id":"fed-calendar-september2026-review","url":"https://www.federalreserve.gov/newsevents/2026-september.htm","title":"Calendar: September 2026","publisher":"Federal Reserve Board","published_at":null,"retrieved_at":"2026-09-21T09:17:50Z","source_type":"regulator","primary_source":true},
+    {"id":"direxion-soxl-20260921-risk-review","url":"https://www.direxion.com/product/daily-semiconductor-bull-bear-3x-etfs","title":"Daily Semiconductor Bull and Bear 3X ETFs","publisher":"Direxion","published_at":null,"retrieved_at":"2026-09-21T09:17:50Z","source_type":"company","primary_source":true}
+  ],
+  "facts": [
+    {"id":"iran-conditions-awaiting-response-20260921-review","ticker":"SOXL","observed_at":"2026-09-21T09:17:50Z","event_date":null,"category":"diplomacy","fact":"한겨레의 9월 20일 보도에 따르면 이란 안보 당국자는 카타르를 통해 종전 조건을 전달했으며 미국의 응답을 기다린다고 밝혔다.","source_id":"hani-diplomacy-20260920","valid_as_of":"2026-09-20T19:26:00+09:00","freshness_class":"FAST","status":"active","schema_version":"1.0.0","note":"인터뷰 일자는 한겨레 18일, Reuters 19일로 달라 여기서는 확정하지 않는다. 이 기록은 전달 및 대기 중이라는 발언의 보도 사실이다."},
+    {"id":"trump-meeting-openness-20260920-review","ticker":"SOXL","observed_at":"2026-09-21T09:17:50Z","event_date":"2026-09-20","category":"official_comments","fact":"Reuters는 미국 대통령이 이란 대통령과의 만남에 열려 있다는 발언을 전했다. 확정된 양자 회담 일정과는 구분한다.","source_id":"reuters-threats-20260920","valid_as_of":"2026-09-20T13:19:00Z","freshness_class":"FAST","status":"active","schema_version":"1.0.0"},
+    {"id":"iran-conditional-retaliation-20260921-review","ticker":"SOXL","observed_at":"2026-09-21T09:17:50Z","event_date":"2026-09-21","category":"official_comments","fact":"Reuters는 이란 혁명수비대 대변인의 추가 미군 공격 시 보복 범위를 확대하겠다는 조건부 발언을 보도했다. 새 공격의 발생 확인은 아니다.","source_id":"reuters-oil-20260921-review","valid_as_of":"2026-09-21T09:17:50Z","freshness_class":"FAST","status":"active","schema_version":"1.0.0"},
+    {"id":"brent-0655utc-20260921","ticker":"SOXL","observed_at":"2026-09-21T09:17:50Z","event_date":"2026-09-21","category":"commodity_price","fact":"Reuters 기사상 9월 21일 06:55 UTC 브렌트 11월물은 102.09달러로 전일 대비 1.71% 하락했다.","value":102.09,"currency":"USD","source_id":"reuters-oil-20260921-review","valid_as_of":"2026-09-21T06:55:00Z","freshness_class":"REALTIME","status":"active","schema_version":"1.0.0","note":"보도 시점의 과거 스냅샷이며 실시간 가격이 아니다."},
+    {"id":"ap-treasury-yield-context-20260921","ticker":"SOXL","observed_at":"2026-09-21T09:17:50Z","event_date":"2026-09-21","category":"rates","fact":"AP의 당일 시장 보도는 미국 10년물 국채 수익률의 5% 접근을 위험 배경으로 언급했다.","source_id":"ap-markets-20260921-review","valid_as_of":"2026-09-21T09:17:50Z","freshness_class":"REALTIME","status":"active","schema_version":"1.0.0","note":"검색 결과의 보도 요약에 기반하며 정확한 현재 수익률 수치 또는 5% 돌파를 주장하지 않는다."},
+    {"id":"fomc-september2026-schedule-review","ticker":"SOXL","observed_at":"2026-09-21T09:17:50Z","event_date":"2026-09-16","category":"economic_calendar","fact":"연준 공식 9월 일정의 정례 FOMC 회의는 15~16일이며 21일이 아니다.","source_id":"fed-calendar-september2026-review","valid_as_of":"2026-09-21T09:17:50Z","freshness_class":"FAST","status":"active","schema_version":"1.0.0"},
+    {"id":"soxl-daily-objective-risk-review","ticker":"SOXL","observed_at":"2026-09-21T09:17:50Z","event_date":null,"category":"fund_structure","fact":"SOXL은 비용 차감 전 NYSE Semiconductor Index 하루 수익률의 300%를 목표로 하며 목표 달성은 보장되지 않는다.","source_id":"direxion-soxl-20260921-risk-review","valid_as_of":"2026-09-21T09:17:50Z","freshness_class":"SLOW","status":"active","schema_version":"1.0.0"}
+  ],
+  "assessment": {
+    "author": "Harvey / ChatGPT",
+    "cancellation_status": "Examined sources do not confirm a scheduled bilateral summit that has now been cancelled, or a cancellation announcement scheduled for today. This is a bounded search finding, not proof that private negotiations or future setbacks do not exist.",
+    "current_distinction": "Mediated conditions and openness to a meeting are not equivalent to a mutually confirmed summit, ceasefire, or final agreement.",
+    "conditional_risks_not_predictions": [
+      "An explicit rejection of proposed terms or failure to arrange a meeting could weaken diplomatic optimism; neither is asserted to be scheduled or confirmed.",
+      "A verified additional attack or incremental disruption to oil exports could raise energy prices and pressure risk assets. Rhetoric alone is not proof of an attack.",
+      "Higher Treasury yields or semiconductor-specific selling could pressure SOXL even without a diplomatic setback."
+    ],
+    "counterevidence": "The reported fall in oil occurred despite known tensions. Reuters attributed relief to both diplomatic hopes and a partial recovery in Saudi shipments, so the move should not be attributed solely to a completed peace deal.",
+    "monitoring_framework": "Separate old headlines from new events, verify issuer and publication time, and compare fresh confirmed developments with contemporaneous oil, Treasury yields and semiconductor-market reactions. Market co-movement is not proof of geopolitical causation.",
+    "portfolio_implication": "The prior leverage-reduction assessment was position-risk management, not a prediction that peace talks would fail today. No new order or completed sale is recorded.",
+    "uncertainty": "No probability, intraday announcement time, guaranteed price reaction, technical support or price target is established by these sources. Recheck before making a current trading decision."
+  }
+}

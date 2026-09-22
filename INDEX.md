@@ -1,7 +1,7 @@
 # INDEX
 
-자동 생성: 2026-09-21 09:18 UTC  
-총 21개 파일. AI/도구는 이 파일의 링크를 따라 개별 파일을 읽는다.
+자동 생성: 2026-09-22 05:06 UTC  
+총 22개 파일. AI/도구는 이 파일의 링크를 따라 개별 파일을 읽는다.
 
 ## (root)
 
@@ -32,6 +32,7 @@
 - [research/SOXL/2026-09-20-one-month-review.json](https://github.com/yoon8358/stock-storage/blob/main/research/SOXL/2026-09-20-one-month-review.json) · [raw](https://raw.githubusercontent.com/yoon8358/stock-storage/main/research/SOXL/2026-09-20-one-month-review.json) · 19,071 B
 - [research/SOXL/2026-09-21-leverage-reduction-review.json](https://github.com/yoon8358/stock-storage/blob/main/research/SOXL/2026-09-21-leverage-reduction-review.json) · [raw](https://raw.githubusercontent.com/yoon8358/stock-storage/main/research/SOXL/2026-09-21-leverage-reduction-review.json) · 7,973 B
 - [research/SOXL/2026-09-21-session-headline-risks.json](https://github.com/yoon8358/stock-storage/blob/main/research/SOXL/2026-09-21-session-headline-risks.json) · [raw](https://raw.githubusercontent.com/yoon8358/stock-storage/main/research/SOXL/2026-09-21-session-headline-risks.json) · 8,186 B
+- [research/SOXL/2026-09-22-rally-persistence-review.json](https://github.com/yoon8358/stock-storage/blob/main/research/SOXL/2026-09-22-rally-persistence-review.json) · [raw](https://raw.githubusercontent.com/yoon8358/stock-storage/main/research/SOXL/2026-09-22-rally-persistence-review.json) · 10,629 B
 
 ## research/screens
 

@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0.0",
+  "report_type": "semiconductor_rally_persistence_assessment",
+  "ticker": "SOXL",
+  "observed_at": "2026-09-22T05:04:09+00:00",
+  "market_session_basis": "US regular session 2026-09-21",
+  "question": "호재 이후에도 높은 가격에서 매수가 이어져 6월 같은 반도체 랠리가 지속될 것인가?",
+  "privacy_note": "No personal holdings, executed trades, account details or balances are included.",
+  "previous_record_reviewed": "research/SOXL/2026-09-21-leverage-reduction-review.json",
+  "sources": [
+    {"id":"finance-20260922","url":"tool://web/finance","title":"Dedicated finance snapshots","publisher":"Web finance tool; underlying provider unspecified","published_at":null,"retrieved_at":"2026-09-22T05:04:09+00:00","source_type":"data_provider","primary_source":false},
+    {"id":"soxx-history-20260922","url":"https://stockanalysis.com/etf/soxx/history/","title":"SOXX historical prices","publisher":"Stock Analysis","published_at":null,"retrieved_at":"2026-09-22T05:04:09+00:00","source_type":"data_provider","primary_source":false},
+    {"id":"soxl-history-20260922","url":"https://stockanalysis.com/etf/soxl/history/","title":"SOXL historical prices","publisher":"Stock Analysis","published_at":null,"retrieved_at":"2026-09-22T05:04:09+00:00","source_type":"data_provider","primary_source":false},
+    {"id":"reuters-amd-20260921","url":"https://www.reuters.com/business/amd-becomes-latest-chipmaker-reach-1-trillion-valuation-ai-demand-2026-09-21/","title":"AMD joins $1 trillion club","publisher":"Reuters","published_at":"2026-09-21T14:21:00Z","retrieved_at":"2026-09-22T05:04:09+00:00","source_type":"news","primary_source":false},
+    {"id":"barrons-cpu-20260921","url":"https://www.barrons.com/articles/intel-stock-price-arm-meta-muse-2a81cacf","title":"Meta's Muse AI Agent Triggers Intel, Chip Stock Rally","publisher":"Barron's","published_at":"2026-09-21","retrieved_at":"2026-09-22T05:04:09+00:00","source_type":"news","primary_source":false},
+    {"id":"mw-june-review-20260902","url":"https://www.marketwatch.com/story/how-one-strategist-warned-on-semiconductor-stocks-within-a-day-of-their-top-03ee8d34","title":"Review of the June semiconductor peak","publisher":"MarketWatch","published_at":"2026-09-02T12:22:00Z","retrieved_at":"2026-09-22T05:04:09+00:00","source_type":"news","primary_source":false},
+    {"id":"direxion-structure-20260922","url":"https://www.direxion.com/product/daily-semiconductor-bull-bear-3x-etfs","title":"SOXL daily investment objective","publisher":"Direxion","published_at":null,"retrieved_at":"2026-09-22T05:04:09+00:00","source_type":"company","primary_source":true}
+  ],
+  "facts": [
+    {"id":"SOXX-20260921-close","ticker":"SOXX","observed_at":"2026-09-22T05:04:09+00:00","event_date":"2026-09-21","category":"price","fact":"2026-09-21 정규장 종가는 559.34달러, 전일 대비 +4.93%다.","source_id":"soxx-history-20260922","valid_as_of":"2026-09-21T20:00:00Z","freshness_class":"REALTIME","status":"active","schema_version":"1.0.0","superseded_by":null},
+    {"id":"SOXX-20260918-close","ticker":"SOXX","observed_at":"2026-09-22T05:04:09+00:00","event_date":"2026-09-18","category":"price","fact":"2026-09-18 종가는 533.07달러, 전일 대비 +2.69%다.","source_id":"soxx-history-20260922","valid_as_of":"2026-09-18T20:00:00Z","freshness_class":"REALTIME","status":"active","schema_version":"1.0.0","superseded_by":null},
+    {"id":"SOXX-20260917-close","ticker":"SOXX","observed_at":"2026-09-22T05:04:09+00:00","event_date":"2026-09-17","category":"price","fact":"2026-09-17 종가는 519.10달러, 전일 대비 +3.39%다.","source_id":"soxx-history-20260922","valid_as_of":"2026-09-17T20:00:00Z","freshness_class":"REALTIME","status":"active","schema_version":"1.0.0","superseded_by":null},
+    {"id":"SOXX-20260916-close","ticker":"SOXX","observed_at":"2026-09-22T05:04:09+00:00","event_date":"2026-09-16","category":"price","fact":"2026-09-16 종가는 502.06달러다.","source_id":"soxx-history-20260922","valid_as_of":"2026-09-16T20:00:00Z","freshness_class":"REALTIME","status":"active","schema_version":"1.0.0","superseded_by":null},
+    {"id":"SOXL-20260921-close","ticker":"SOXL","observed_at":"2026-09-22T05:04:09+00:00","event_date":"2026-09-21","category":"price","fact":"2026-09-21 정규장 종가는 141.93달러다.","source_id":"soxl-history-20260922","valid_as_of":"2026-09-21T20:00:00Z","freshness_class":"REALTIME","status":"active","schema_version":"1.0.0","superseded_by":null},
+    {"id":"SOXX-20260817-bar","ticker":"SOXX","observed_at":"2026-09-22T05:04:09+00:00","event_date":"2026-08-17","category":"historical_price","fact":"2026-08-17 종가는 559.12달러, 당일 고가는 566.02달러다.","source_id":"soxx-history-20260922","valid_as_of":"2026-08-17T20:00:00Z","freshness_class":"REALTIME","status":"active","schema_version":"1.0.0","superseded_by":null},
+    {"id":"SEMI-20260921-cpu-theme","ticker":"SOXL","observed_at":"2026-09-22T05:04:09+00:00","event_date":"2026-09-21","category":"reported_catalyst","fact":"Barron's는 Meta Muse의 인기가 CPU 수요 기대와 Intel·AMD·Arm의 상승을 자극했다고 보도했다. 보도된 시장 해석이며 확정된 추가 매출이 아니다.","source_id":"barrons-cpu-20260921","valid_as_of":"2026-09-21T20:00:00Z","freshness_class":"FAST","status":"active","schema_version":"1.0.0","superseded_by":null},
+    {"id":"SEMI-20260921-valuation","ticker":"SOXL","observed_at":"2026-09-22T05:04:09+00:00","event_date":"2026-09-21","category":"reported_valuation","fact":"Reuters의 9월 21일 보도상 향후 12개월 이익 기준 주가수익비율은 AMD 약 41배, Nvidia 약 16.3배다. 예상 이익의 정확성을 보장하지 않는다.","source_id":"reuters-amd-20260921","valid_as_of":"2026-09-21T14:21:00Z","freshness_class":"FAST","status":"active","schema_version":"1.0.0","superseded_by":null},
+    {"id":"SOXX-june-peak-review","ticker":"SOXX","observed_at":"2026-09-22T05:04:09+00:00","event_date":"2026-06-22","category":"historical_context","fact":"MarketWatch의 9월 2일 회고에 따르면 SOXX는 6월 22일 당시 최고점을 기록한 뒤 5주 안에 거의 30% 하락했다.","source_id":"mw-june-review-20260902","valid_as_of":"2026-09-02T12:22:00Z","freshness_class":"SLOW","status":"active","schema_version":"1.0.0","superseded_by":null},
+    {"id":"SOXL-daily-objective-20260922","ticker":"SOXL","observed_at":"2026-09-22T05:04:09+00:00","event_date":null,"category":"fund_structure","fact":"SOXL은 비용 차감 전 NYSE Semiconductor Index 일일 수익률의 300%를 목표로 한다. 여러 날 누적 수익률의 3배를 보장하지 않는다.","source_id":"direxion-structure-20260922","valid_as_of":"2026-09-22T05:04:09+00:00","freshness_class":"SLOW","status":"active","schema_version":"1.0.0","superseded_by":null}
+  ],
+  "dedicated_finance_snapshot": {
+    "reported_latest_trade_time":"2026-09-22T00:15:00Z",
+    "source_id":"finance-20260922",
+    "prices_usd":{"SOXX":559.34,"SOXL":141.93,"QQQ":741.47},
+    "reported_change_pct":{"SOXX":4.93087,"SOXL":14.76914,"QQQ":2.75556,"NVDA":2.28101,"AMD":9.95320,"INTC":12.05801,"ARM":17.12202,"MU":2.68557,"AMAT":4.45374,"LRCX":4.88355,"AVGO":1.39258},
+    "soxx_reported_volume":7966136,
+    "warning":"Reported latest-trade timestamp does not prove an executable current quote. Current prices agree with separately displayed regular-session closes. Sources differ slightly in intraday highs/lows/volumes; their intraday bars are not merged."
+  },
+  "derived_metrics": {
+    "return_period":"2026-09-16 close to 2026-09-21 close",
+    "soxx_three_session_return_pct":11.4090,
+    "soxl_three_session_return_pct":36.5105,
+    "soxl_return_inputs_usd":{"start_close":103.97,"end_close":141.93},
+    "soxx_prior20_session_volume_mean":7226396.9,
+    "soxx_prior20_volume_period":"2026-08-21 through 2026-09-18",
+    "soxx_latest_finance_volume_to_prior20_average":1.1024,
+    "source_ids":["soxx-history-20260922","soxl-history-20260922","finance-20260922"],
+    "interpretation_limit":"Volume is trading activity, not verified net institutional inflows. Fund flows, buyer identity, options hedging and forward-earnings revisions were not directly verified."
+  },
+  "assessment": {
+    "author":"Harvey / ChatGPT",
+    "status":"Conditional bullish candidate; not a confirmed June-style sustained rally",
+    "conclusion_ko":"어제 하루로 끝나는 반등보다는 상승 추세로 이어질 가능성에 조금 더 무게를 두되, 고점권 첫 조정에서 매수세가 재유입되는지 확인해야 한다. 통계적 확률 추정은 아니다.",
+    "supporting_reasoning":["여러 거래일 상승과 CPU·GPU·메모리·장비 종목의 동반 강세는 단일 종목 반등보다 긍정적이다.","AI 사용 확산이 추가 컴퓨팅 수요와 이익 전망 상향으로 연결되면 고가격 신규 매수의 논리가 유지될 수 있다. 이 연결은 아직 가설이다."],
+    "counterarguments":["SOXX 약 11.4%, SOXL 약 36.5%의 3거래일 상승은 단기 가격 부담을 만든다.","SOXX는 8월 17일 고점권을 재시험 중이며 해당 가격대의 매물 흡수는 아직 확인되지 않았다.","거래량은 직전 20거래일 평균의 약 1.1배로 폭발적인 자금 유입의 증거는 아니다.","AI 수요 기대와 예상 EPS의 실제 상향은 동일하지 않다."],
+    "monitoring_heuristics_not_validated_trading_rules":{
+      "strengthening":"SOXX가 560~566달러 부근을 넘고 종가 기준으로 유지하면서 여러 반도체 그룹이 동반 강세를 보이는 경우.",
+      "constructive_consolidation":"급등 이후 완만한 조정 또는 횡보 중 거래가 줄고 다음 상승 때 참여 종목이 다시 늘어나는 경우.",
+      "weakening":"반복되는 고점 돌파 실패, 거래 증가를 동반한 하락, 540달러대 회복 실패 또는 9월 18일 종가 약 533달러로의 빠른 되돌림이 함께 나타나는 경우.",
+      "level_basis":"560~566은 8월 17일 고점과 9월 21일 가격대에서 도출했다. 540달러대는 9월 21일 초반 거래권역, 533은 직전 거래일 종가다. 보장된 지지·저항이나 자동 매매선이 아니다."
+    },
+    "limitations":["6월 전체 일별 수급·실적추정 변화와 현재를 동일 조건으로 비교하는 백테스트는 수행하지 않았다.","Bigdata 검색은 크레딧 소진 오류로 실패했다. 사용 가능한 웹 및 가격 자료로 평가했다.","This is analysis only. No trades or new scheduled monitoring were executed."]
+  }
+}

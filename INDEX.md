@@ -1,6 +1,6 @@
 # INDEX
 
-자동 생성: 2026-09-24 06:16 UTC  
+자동 생성: 2026-09-24 06:32 UTC  
 총 23개 파일. AI/도구는 이 파일의 링크를 따라 개별 파일을 읽는다.
 
 ## (root)
@@ -39,7 +39,7 @@
 - [research/screens/2026-09-20-ai-semiconductor-hidden.json](https://github.com/yoon8358/stock-storage/blob/main/research/screens/2026-09-20-ai-semiconductor-hidden.json) · [raw](https://raw.githubusercontent.com/yoon8358/stock-storage/main/research/screens/2026-09-20-ai-semiconductor-hidden.json) · 20,932 B
 - [research/screens/2026-09-20-hidden-quality-growth.json](https://github.com/yoon8358/stock-storage/blob/main/research/screens/2026-09-20-hidden-quality-growth.json) · [raw](https://raw.githubusercontent.com/yoon8358/stock-storage/main/research/screens/2026-09-20-hidden-quality-growth.json) · 14,949 B
 - [research/screens/2026-09-20-us-growth-entry.json](https://github.com/yoon8358/stock-storage/blob/main/research/screens/2026-09-20-us-growth-entry.json) · [raw](https://raw.githubusercontent.com/yoon8358/stock-storage/main/research/screens/2026-09-20-us-growth-entry.json) · 14,676 B
-- [research/screens/2026-09-24-growth-candidates-iot-cls-tost.json](https://github.com/yoon8358/stock-storage/blob/main/research/screens/2026-09-24-growth-candidates-iot-cls-tost.json) · [raw](https://raw.githubusercontent.com/yoon8358/stock-storage/main/research/screens/2026-09-24-growth-candidates-iot-cls-tost.json) · 16,849 B
+- [research/screens/2026-09-24-growth-candidates-iot-cls-tost.json](https://github.com/yoon8358/stock-storage/blob/main/research/screens/2026-09-24-growth-candidates-iot-cls-tost.json) · [raw](https://raw.githubusercontent.com/yoon8358/stock-storage/main/research/screens/2026-09-24-growth-candidates-iot-cls-tost.json) · 23,262 B
 
 ## schema
 

@@ -6,7 +6,10 @@
   "status": "conditional_research_recommendations_not_executed_trades",
   "scope": "Selected US-listed growth candidates, not an exhaustive all-market screen. Business quality, valuation caveats and short-term entry conditions are assessed separately.",
   "price_as_of": "2026-09-23T16:00:00-04:00",
-  "prior_records": ["research/screens/2026-09-20-us-growth-entry.json", "research/screens/2026-09-20-hidden-quality-growth.json"],
+  "prior_records": [
+    "research/screens/2026-09-20-us-growth-entry.json",
+    "research/screens/2026-09-20-hidden-quality-growth.json"
+  ],
   "limitations": [
     "Prices shown are September 23 regular-session closes, not September 24 executable quotes.",
     "Entry ranges are analyst-selected conditional observation zones, not fair values, guaranteed support or guaranteed stop execution prices.",
@@ -17,49 +20,500 @@
     "No promise of short-term returns, trade execution or automated monitoring is made. No private portfolio or transaction data are included."
   ],
   "sources": [
-    {"id":"G0924-IOT-SEC","url":"https://www.sec.gov/Archives/edgar/data/1642896/000162828026060438/samsaraepr-q22027.htm","publisher":"Samsara via SEC EDGAR","title":"Samsara Reports Second Quarter Fiscal Year 2027 Financial Results","published_at":"2026-09-03","retrieved_at":"2026-09-24T15:14:36+09:00","source_type":"sec","primary_source":true},
-    {"id":"G0924-IOT-CUSTOMERS","url":"https://www.samsara.com/company/news/press-releases/q2-fiscal-year-27-results","publisher":"Samsara","title":"Samsara Crosses $2.1 Billion in ARR as Large Enterprises Standardize on Its Platform","published_at":"2026-09-03","retrieved_at":"2026-09-24T15:14:36+09:00","source_type":"company","primary_source":true},
-    {"id":"G0924-CLS-Q2","url":"https://corporate.celestica.com/news-releases/news-release-details/celestica-announces-second-quarter-2026-financial-results","publisher":"Celestica","title":"Celestica Announces Second Quarter 2026 Financial Results","published_at":"2026-07-27","retrieved_at":"2026-09-24T15:14:36+09:00","source_type":"company","primary_source":true},
-    {"id":"G0924-CLS-OFFERING","url":"https://corporate.celestica.com/news-releases/news-release-details/celestica-completes-equity-offering","publisher":"Celestica","title":"Celestica Completes Equity Offering","published_at":"2026-08-07","retrieved_at":"2026-09-24T15:14:36+09:00","source_type":"company","primary_source":true},
-    {"id":"G0924-CLS-EVENT","url":"https://corporate.celestica.com/news-releases/news-release-details/celestica-host-2026-investor-and-analyst-day-october-27-2026","publisher":"Celestica","title":"Celestica to Host 2026 Investor and Analyst Day on October 27, 2026","published_at":"2026-09-08","retrieved_at":"2026-09-24T15:14:36+09:00","source_type":"company","primary_source":true},
-    {"id":"G0924-TOST-Q2","url":"https://www.businesswire.com/news/home/20260804267340/en/Toast-Announces-Second-Quarter-2026-Financial-Results","publisher":"Toast via Business Wire","title":"Toast Announces Second Quarter 2026 Financial Results","published_at":"2026-08-04","retrieved_at":"2026-09-24T15:14:36+09:00","source_type":"company","primary_source":true},
-    {"id":"G0924-IOT-PRICE","url":"https://stockanalysis.com/stocks/iot/history/","publisher":"Stock Analysis / S&P Global Market Intelligence","published_at":null,"retrieved_at":"2026-09-24T15:14:36+09:00","source_type":"data_provider","primary_source":false},
-    {"id":"G0924-CLS-PRICE","url":"https://stockanalysis.com/stocks/cls/history/","publisher":"Stock Analysis / S&P Global Market Intelligence","published_at":null,"retrieved_at":"2026-09-24T15:14:36+09:00","source_type":"data_provider","primary_source":false},
-    {"id":"G0924-TOST-PRICE","url":"https://stockanalysis.com/stocks/tost/history/","publisher":"Stock Analysis / S&P Global Market Intelligence","published_at":null,"retrieved_at":"2026-09-24T15:14:36+09:00","source_type":"data_provider","primary_source":false}
+    {
+      "id": "G0924-IOT-SEC",
+      "url": "https://www.sec.gov/Archives/edgar/data/1642896/000162828026060438/samsaraepr-q22027.htm",
+      "publisher": "Samsara via SEC EDGAR",
+      "title": "Samsara Reports Second Quarter Fiscal Year 2027 Financial Results",
+      "published_at": "2026-09-03",
+      "retrieved_at": "2026-09-24T15:14:36+09:00",
+      "source_type": "sec",
+      "primary_source": true
+    },
+    {
+      "id": "G0924-IOT-CUSTOMERS",
+      "url": "https://www.samsara.com/company/news/press-releases/q2-fiscal-year-27-results",
+      "publisher": "Samsara",
+      "title": "Samsara Crosses $2.1 Billion in ARR as Large Enterprises Standardize on Its Platform",
+      "published_at": "2026-09-03",
+      "retrieved_at": "2026-09-24T15:14:36+09:00",
+      "source_type": "company",
+      "primary_source": true
+    },
+    {
+      "id": "G0924-CLS-Q2",
+      "url": "https://corporate.celestica.com/news-releases/news-release-details/celestica-announces-second-quarter-2026-financial-results",
+      "publisher": "Celestica",
+      "title": "Celestica Announces Second Quarter 2026 Financial Results",
+      "published_at": "2026-07-27",
+      "retrieved_at": "2026-09-24T15:14:36+09:00",
+      "source_type": "company",
+      "primary_source": true
+    },
+    {
+      "id": "G0924-CLS-OFFERING",
+      "url": "https://corporate.celestica.com/news-releases/news-release-details/celestica-completes-equity-offering",
+      "publisher": "Celestica",
+      "title": "Celestica Completes Equity Offering",
+      "published_at": "2026-08-07",
+      "retrieved_at": "2026-09-24T15:14:36+09:00",
+      "source_type": "company",
+      "primary_source": true
+    },
+    {
+      "id": "G0924-CLS-EVENT",
+      "url": "https://corporate.celestica.com/news-releases/news-release-details/celestica-host-2026-investor-and-analyst-day-october-27-2026",
+      "publisher": "Celestica",
+      "title": "Celestica to Host 2026 Investor and Analyst Day on October 27, 2026",
+      "published_at": "2026-09-08",
+      "retrieved_at": "2026-09-24T15:14:36+09:00",
+      "source_type": "company",
+      "primary_source": true
+    },
+    {
+      "id": "G0924-TOST-Q2",
+      "url": "https://www.businesswire.com/news/home/20260804267340/en/Toast-Announces-Second-Quarter-2026-Financial-Results",
+      "publisher": "Toast via Business Wire",
+      "title": "Toast Announces Second Quarter 2026 Financial Results",
+      "published_at": "2026-08-04",
+      "retrieved_at": "2026-09-24T15:14:36+09:00",
+      "source_type": "company",
+      "primary_source": true
+    },
+    {
+      "id": "G0924-IOT-PRICE",
+      "url": "https://stockanalysis.com/stocks/iot/history/",
+      "publisher": "Stock Analysis / S&P Global Market Intelligence",
+      "published_at": null,
+      "retrieved_at": "2026-09-24T15:14:36+09:00",
+      "source_type": "data_provider",
+      "primary_source": false
+    },
+    {
+      "id": "G0924-CLS-PRICE",
+      "url": "https://stockanalysis.com/stocks/cls/history/",
+      "publisher": "Stock Analysis / S&P Global Market Intelligence",
+      "published_at": null,
+      "retrieved_at": "2026-09-24T15:14:36+09:00",
+      "source_type": "data_provider",
+      "primary_source": false
+    },
+    {
+      "id": "G0924-TOST-PRICE",
+      "url": "https://stockanalysis.com/stocks/tost/history/",
+      "publisher": "Stock Analysis / S&P Global Market Intelligence",
+      "published_at": null,
+      "retrieved_at": "2026-09-24T15:14:36+09:00",
+      "source_type": "data_provider",
+      "primary_source": false
+    },
+    {
+      "id": "G0924-IOT-TRANSCRIPT",
+      "url": "https://s29.q4cdn.com/853855404/files/content_files/IOT-Q2-FY27-Earnings-Transcript.pdf",
+      "publisher": "Samsara Investor Relations / FactSet CallStreet",
+      "title": "Samsara Q2 FY2027 Earnings Call Corrected Transcript",
+      "published_at": "2026-09-03",
+      "retrieved_at": "2026-09-24T15:31:00+09:00",
+      "source_type": "earnings_call",
+      "primary_source": true
+    }
   ],
   "facts": [
-    {"id":"G0924-F01","ticker":"IOT","observed_at":"2026-09-24T15:14:36+09:00","event_date":"2026-09-23","category":"price","fact":"US regular-session closing price was USD 39.08.","source_id":"G0924-IOT-PRICE","valid_as_of":"2026-09-23T16:00:00-04:00","freshness_class":"REALTIME","status":"active","schema_version":"1.0.0"},
-    {"id":"G0924-F02","ticker":"CLS","observed_at":"2026-09-24T15:14:36+09:00","event_date":"2026-09-23","category":"price","fact":"US regular-session closing price was USD 361.84.","source_id":"G0924-CLS-PRICE","valid_as_of":"2026-09-23T16:00:00-04:00","freshness_class":"REALTIME","status":"active","schema_version":"1.0.0"},
-    {"id":"G0924-F03","ticker":"TOST","observed_at":"2026-09-24T15:14:36+09:00","event_date":"2026-09-23","category":"price","fact":"US regular-session closing price was USD 29.81.","source_id":"G0924-TOST-PRICE","valid_as_of":"2026-09-23T16:00:00-04:00","freshness_class":"REALTIME","status":"active","schema_version":"1.0.0"},
-    {"id":"G0924-F04","ticker":"IOT","observed_at":"2026-09-24T15:14:36+09:00","event_date":"2026-08-01","category":"revenue","fact":"Q2 FY2027 revenue was USD 508.4 million, up 30% year over year as reported and 29% in constant currency.","source_id":"G0924-IOT-SEC","valid_as_of":"2026-09-24T15:14:36+09:00","freshness_class":"PERIODIC","status":"active","schema_version":"1.0.0"},
-    {"id":"G0924-F05","ticker":"IOT","observed_at":"2026-09-24T15:14:36+09:00","event_date":"2026-08-01","category":"recurring_revenue","fact":"Ending ARR was USD 2,124.7 million, up 30% year over year.","source_id":"G0924-IOT-SEC","valid_as_of":"2026-09-24T15:14:36+09:00","freshness_class":"PERIODIC","status":"active","schema_version":"1.0.0"},
-    {"id":"G0924-F06","ticker":"IOT","observed_at":"2026-09-24T15:14:36+09:00","event_date":"2026-08-01","category":"earnings_quality","fact":"Q2 FY2027 GAAP operating margin was 1%, compared with non-GAAP operating margin of 21%.","source_id":"G0924-IOT-SEC","valid_as_of":"2026-09-24T15:14:36+09:00","freshness_class":"PERIODIC","status":"active","schema_version":"1.0.0"},
-    {"id":"G0924-F07","ticker":"IOT","observed_at":"2026-09-24T15:14:36+09:00","event_date":"2026-08-01","category":"cash_flow","fact":"Q2 FY2027 company-defined free cash flow was USD 64.7 million versus USD 44.2 million a year earlier.","source_id":"G0924-IOT-SEC","valid_as_of":"2026-09-24T15:14:36+09:00","freshness_class":"PERIODIC","status":"active","schema_version":"1.0.0"},
-    {"id":"G0924-F08","ticker":"IOT","observed_at":"2026-09-24T15:14:36+09:00","event_date":"2026-09-03","category":"company_guidance","fact":"FY2027 company non-GAAP diluted EPS guidance is USD 0.76-0.78; this is a forecast, not actual GAAP EPS.","source_id":"G0924-IOT-SEC","valid_as_of":"2026-09-24T15:14:36+09:00","freshness_class":"FAST","status":"active","schema_version":"1.0.0","claim_type":"company_forecast"},
-    {"id":"G0924-F09","ticker":"IOT","observed_at":"2026-09-24T15:14:36+09:00","event_date":"2026-09-03","category":"company_guidance","fact":"Q3 FY2027 company revenue guidance implies 24% reported year-over-year growth, compared with 30% reported growth in Q2.","source_id":"G0924-IOT-SEC","valid_as_of":"2026-09-24T15:14:36+09:00","freshness_class":"FAST","status":"active","schema_version":"1.0.0","claim_type":"company_forecast"},
-    {"id":"G0924-F10","ticker":"IOT","observed_at":"2026-09-24T15:14:36+09:00","event_date":"2026-08-01","category":"customer_adoption","fact":"Among customers with ARR above USD 100,000, 96% subscribe to at least two products and 72% subscribe to at least three products.","source_id":"G0924-IOT-CUSTOMERS","valid_as_of":"2026-09-24T15:14:36+09:00","freshness_class":"PERIODIC","status":"active","schema_version":"1.0.0"},
-    {"id":"G0924-F11","ticker":"CLS","observed_at":"2026-09-24T15:14:36+09:00","event_date":"2026-06-30","category":"revenue","fact":"Q2 2026 revenue was USD 4.70 billion, up 62% year over year.","source_id":"G0924-CLS-Q2","valid_as_of":"2026-09-24T15:14:36+09:00","freshness_class":"PERIODIC","status":"active","schema_version":"1.0.0"},
-    {"id":"G0924-F12","ticker":"CLS","observed_at":"2026-09-24T15:14:36+09:00","event_date":"2026-06-30","category":"earnings","fact":"Q2 2026 non-GAAP adjusted diluted EPS was USD 2.54, compared with USD 1.39 a year earlier.","source_id":"G0924-CLS-Q2","valid_as_of":"2026-09-24T15:14:36+09:00","freshness_class":"PERIODIC","status":"active","schema_version":"1.0.0"},
-    {"id":"G0924-F13","ticker":"CLS","observed_at":"2026-09-24T15:14:36+09:00","event_date":"2026-07-27","category":"company_guidance","fact":"The July 27 release raised FY2026 revenue outlook to USD 20.5 billion, implying 65% year-over-year growth.","source_id":"G0924-CLS-Q2","valid_as_of":"2026-09-24T15:14:36+09:00","freshness_class":"FAST","status":"active","schema_version":"1.0.0","claim_type":"company_forecast"},
-    {"id":"G0924-F14","ticker":"CLS","observed_at":"2026-09-24T15:14:36+09:00","event_date":"2026-07-27","category":"guidance_assumption","fact":"July FY2026 adjusted EPS guidance of USD 11.30 explicitly assumed no share repurchases or issuances during the remainder of 2026.","source_id":"G0924-CLS-Q2","valid_as_of":"2026-09-24T15:14:36+09:00","freshness_class":"FAST","status":"active","schema_version":"1.0.0","use_limitation":"Historical guidance and its original assumption only; not verified post-offering EPS."},
-    {"id":"G0924-F15","ticker":"CLS","observed_at":"2026-09-24T15:14:36+09:00","event_date":"2026-08-07","category":"equity_offering","fact":"Celestica completed issuance of 11,129,031 common shares including the fully exercised underwriters' option, at USD 310 per share, for approximately USD 3.45 billion gross proceeds.","source_id":"G0924-CLS-OFFERING","valid_as_of":"2026-09-24T15:14:36+09:00","freshness_class":"FAST","status":"active","schema_version":"1.0.0"},
-    {"id":"G0924-F16","ticker":"CLS","observed_at":"2026-09-24T15:14:36+09:00","event_date":"2026-10-27","category":"scheduled_event","fact":"The company scheduled its 2026 Investor and Analyst Day for October 27, 2026, in conjunction with its Q3 results conference call.","source_id":"G0924-CLS-EVENT","valid_as_of":"2026-09-24T15:14:36+09:00","freshness_class":"FAST","status":"active","schema_version":"1.0.0","claim_type":"scheduled","announced_at":"2026-09-08"},
-    {"id":"G0924-F17","ticker":"TOST","observed_at":"2026-09-24T15:14:36+09:00","event_date":"2026-06-30","category":"recurring_run_rate","fact":"Toast's company-defined annualized recurring run-rate increased 25% year over year to USD 2.4 billion; this is not identical to Samsara's ARR definition.","source_id":"G0924-TOST-Q2","valid_as_of":"2026-09-24T15:14:36+09:00","freshness_class":"PERIODIC","status":"active","schema_version":"1.0.0"},
-    {"id":"G0924-F18","ticker":"TOST","observed_at":"2026-09-24T15:14:36+09:00","event_date":"2026-06-30","category":"operating_income","fact":"Q2 2026 GAAP operating income was USD 152 million versus USD 80 million a year earlier.","source_id":"G0924-TOST-Q2","valid_as_of":"2026-09-24T15:14:36+09:00","freshness_class":"PERIODIC","status":"active","schema_version":"1.0.0"},
-    {"id":"G0924-F19","ticker":"TOST","observed_at":"2026-09-24T15:14:36+09:00","event_date":"2026-06-30","category":"cash_flow","fact":"Q2 2026 free cash flow was USD 130 million versus USD 208 million a year earlier.","source_id":"G0924-TOST-Q2","valid_as_of":"2026-09-24T15:14:36+09:00","freshness_class":"PERIODIC","status":"active","schema_version":"1.0.0"},
-    {"id":"G0924-F20","ticker":"TOST","observed_at":"2026-09-24T15:14:36+09:00","event_date":"2026-06-30","category":"working_capital","fact":"Q2 cash-flow inventory movement consumed USD 81 million, versus an USD 8 million contribution in Q2 2025.","source_id":"G0924-TOST-Q2","valid_as_of":"2026-09-24T15:14:36+09:00","freshness_class":"PERIODIC","status":"active","schema_version":"1.0.0"}
+    {
+      "id": "G0924-F01",
+      "ticker": "IOT",
+      "observed_at": "2026-09-24T15:14:36+09:00",
+      "event_date": "2026-09-23",
+      "category": "price",
+      "fact": "US regular-session closing price was USD 39.08.",
+      "source_id": "G0924-IOT-PRICE",
+      "valid_as_of": "2026-09-23T16:00:00-04:00",
+      "freshness_class": "REALTIME",
+      "status": "active",
+      "schema_version": "1.0.0"
+    },
+    {
+      "id": "G0924-F02",
+      "ticker": "CLS",
+      "observed_at": "2026-09-24T15:14:36+09:00",
+      "event_date": "2026-09-23",
+      "category": "price",
+      "fact": "US regular-session closing price was USD 361.84.",
+      "source_id": "G0924-CLS-PRICE",
+      "valid_as_of": "2026-09-23T16:00:00-04:00",
+      "freshness_class": "REALTIME",
+      "status": "active",
+      "schema_version": "1.0.0"
+    },
+    {
+      "id": "G0924-F03",
+      "ticker": "TOST",
+      "observed_at": "2026-09-24T15:14:36+09:00",
+      "event_date": "2026-09-23",
+      "category": "price",
+      "fact": "US regular-session closing price was USD 29.81.",
+      "source_id": "G0924-TOST-PRICE",
+      "valid_as_of": "2026-09-23T16:00:00-04:00",
+      "freshness_class": "REALTIME",
+      "status": "active",
+      "schema_version": "1.0.0"
+    },
+    {
+      "id": "G0924-F04",
+      "ticker": "IOT",
+      "observed_at": "2026-09-24T15:14:36+09:00",
+      "event_date": "2026-08-01",
+      "category": "revenue",
+      "fact": "Q2 FY2027 revenue was USD 508.4 million, up 30% year over year as reported and 29% in constant currency.",
+      "source_id": "G0924-IOT-SEC",
+      "valid_as_of": "2026-09-24T15:14:36+09:00",
+      "freshness_class": "PERIODIC",
+      "status": "active",
+      "schema_version": "1.0.0"
+    },
+    {
+      "id": "G0924-F05",
+      "ticker": "IOT",
+      "observed_at": "2026-09-24T15:14:36+09:00",
+      "event_date": "2026-08-01",
+      "category": "recurring_revenue",
+      "fact": "Ending ARR was USD 2,124.7 million, up 30% year over year.",
+      "source_id": "G0924-IOT-SEC",
+      "valid_as_of": "2026-09-24T15:14:36+09:00",
+      "freshness_class": "PERIODIC",
+      "status": "active",
+      "schema_version": "1.0.0"
+    },
+    {
+      "id": "G0924-F06",
+      "ticker": "IOT",
+      "observed_at": "2026-09-24T15:14:36+09:00",
+      "event_date": "2026-08-01",
+      "category": "earnings_quality",
+      "fact": "Q2 FY2027 GAAP operating margin was 1%, compared with non-GAAP operating margin of 21%.",
+      "source_id": "G0924-IOT-SEC",
+      "valid_as_of": "2026-09-24T15:14:36+09:00",
+      "freshness_class": "PERIODIC",
+      "status": "active",
+      "schema_version": "1.0.0"
+    },
+    {
+      "id": "G0924-F07",
+      "ticker": "IOT",
+      "observed_at": "2026-09-24T15:14:36+09:00",
+      "event_date": "2026-08-01",
+      "category": "cash_flow",
+      "fact": "Q2 FY2027 company-defined free cash flow was USD 64.7 million versus USD 44.2 million a year earlier.",
+      "source_id": "G0924-IOT-SEC",
+      "valid_as_of": "2026-09-24T15:14:36+09:00",
+      "freshness_class": "PERIODIC",
+      "status": "active",
+      "schema_version": "1.0.0"
+    },
+    {
+      "id": "G0924-F08",
+      "ticker": "IOT",
+      "observed_at": "2026-09-24T15:14:36+09:00",
+      "event_date": "2026-09-03",
+      "category": "company_guidance",
+      "fact": "FY2027 company non-GAAP diluted EPS guidance is USD 0.76-0.78; this is a forecast, not actual GAAP EPS.",
+      "source_id": "G0924-IOT-SEC",
+      "valid_as_of": "2026-09-24T15:14:36+09:00",
+      "freshness_class": "FAST",
+      "status": "active",
+      "schema_version": "1.0.0",
+      "claim_type": "company_forecast"
+    },
+    {
+      "id": "G0924-F09",
+      "ticker": "IOT",
+      "observed_at": "2026-09-24T15:14:36+09:00",
+      "event_date": "2026-09-03",
+      "category": "company_guidance",
+      "fact": "Q3 FY2027 company revenue guidance implies 24% reported year-over-year growth, compared with 30% reported growth in Q2.",
+      "source_id": "G0924-IOT-SEC",
+      "valid_as_of": "2026-09-24T15:14:36+09:00",
+      "freshness_class": "FAST",
+      "status": "active",
+      "schema_version": "1.0.0",
+      "claim_type": "company_forecast"
+    },
+    {
+      "id": "G0924-F10",
+      "ticker": "IOT",
+      "observed_at": "2026-09-24T15:14:36+09:00",
+      "event_date": "2026-08-01",
+      "category": "customer_adoption",
+      "fact": "Among customers with ARR above USD 100,000, 96% subscribe to at least two products and 72% subscribe to at least three products.",
+      "source_id": "G0924-IOT-CUSTOMERS",
+      "valid_as_of": "2026-09-24T15:14:36+09:00",
+      "freshness_class": "PERIODIC",
+      "status": "active",
+      "schema_version": "1.0.0"
+    },
+    {
+      "id": "G0924-F11",
+      "ticker": "CLS",
+      "observed_at": "2026-09-24T15:14:36+09:00",
+      "event_date": "2026-06-30",
+      "category": "revenue",
+      "fact": "Q2 2026 revenue was USD 4.70 billion, up 62% year over year.",
+      "source_id": "G0924-CLS-Q2",
+      "valid_as_of": "2026-09-24T15:14:36+09:00",
+      "freshness_class": "PERIODIC",
+      "status": "active",
+      "schema_version": "1.0.0"
+    },
+    {
+      "id": "G0924-F12",
+      "ticker": "CLS",
+      "observed_at": "2026-09-24T15:14:36+09:00",
+      "event_date": "2026-06-30",
+      "category": "earnings",
+      "fact": "Q2 2026 non-GAAP adjusted diluted EPS was USD 2.54, compared with USD 1.39 a year earlier.",
+      "source_id": "G0924-CLS-Q2",
+      "valid_as_of": "2026-09-24T15:14:36+09:00",
+      "freshness_class": "PERIODIC",
+      "status": "active",
+      "schema_version": "1.0.0"
+    },
+    {
+      "id": "G0924-F13",
+      "ticker": "CLS",
+      "observed_at": "2026-09-24T15:14:36+09:00",
+      "event_date": "2026-07-27",
+      "category": "company_guidance",
+      "fact": "The July 27 release raised FY2026 revenue outlook to USD 20.5 billion, implying 65% year-over-year growth.",
+      "source_id": "G0924-CLS-Q2",
+      "valid_as_of": "2026-09-24T15:14:36+09:00",
+      "freshness_class": "FAST",
+      "status": "active",
+      "schema_version": "1.0.0",
+      "claim_type": "company_forecast"
+    },
+    {
+      "id": "G0924-F14",
+      "ticker": "CLS",
+      "observed_at": "2026-09-24T15:14:36+09:00",
+      "event_date": "2026-07-27",
+      "category": "guidance_assumption",
+      "fact": "July FY2026 adjusted EPS guidance of USD 11.30 explicitly assumed no share repurchases or issuances during the remainder of 2026.",
+      "source_id": "G0924-CLS-Q2",
+      "valid_as_of": "2026-09-24T15:14:36+09:00",
+      "freshness_class": "FAST",
+      "status": "active",
+      "schema_version": "1.0.0",
+      "use_limitation": "Historical guidance and its original assumption only; not verified post-offering EPS."
+    },
+    {
+      "id": "G0924-F15",
+      "ticker": "CLS",
+      "observed_at": "2026-09-24T15:14:36+09:00",
+      "event_date": "2026-08-07",
+      "category": "equity_offering",
+      "fact": "Celestica completed issuance of 11,129,031 common shares including the fully exercised underwriters' option, at USD 310 per share, for approximately USD 3.45 billion gross proceeds.",
+      "source_id": "G0924-CLS-OFFERING",
+      "valid_as_of": "2026-09-24T15:14:36+09:00",
+      "freshness_class": "FAST",
+      "status": "active",
+      "schema_version": "1.0.0"
+    },
+    {
+      "id": "G0924-F16",
+      "ticker": "CLS",
+      "observed_at": "2026-09-24T15:14:36+09:00",
+      "event_date": "2026-10-27",
+      "category": "scheduled_event",
+      "fact": "The company scheduled its 2026 Investor and Analyst Day for October 27, 2026, in conjunction with its Q3 results conference call.",
+      "source_id": "G0924-CLS-EVENT",
+      "valid_as_of": "2026-09-24T15:14:36+09:00",
+      "freshness_class": "FAST",
+      "status": "active",
+      "schema_version": "1.0.0",
+      "claim_type": "scheduled",
+      "announced_at": "2026-09-08"
+    },
+    {
+      "id": "G0924-F17",
+      "ticker": "TOST",
+      "observed_at": "2026-09-24T15:14:36+09:00",
+      "event_date": "2026-06-30",
+      "category": "recurring_run_rate",
+      "fact": "Toast's company-defined annualized recurring run-rate increased 25% year over year to USD 2.4 billion; this is not identical to Samsara's ARR definition.",
+      "source_id": "G0924-TOST-Q2",
+      "valid_as_of": "2026-09-24T15:14:36+09:00",
+      "freshness_class": "PERIODIC",
+      "status": "active",
+      "schema_version": "1.0.0"
+    },
+    {
+      "id": "G0924-F18",
+      "ticker": "TOST",
+      "observed_at": "2026-09-24T15:14:36+09:00",
+      "event_date": "2026-06-30",
+      "category": "operating_income",
+      "fact": "Q2 2026 GAAP operating income was USD 152 million versus USD 80 million a year earlier.",
+      "source_id": "G0924-TOST-Q2",
+      "valid_as_of": "2026-09-24T15:14:36+09:00",
+      "freshness_class": "PERIODIC",
+      "status": "active",
+      "schema_version": "1.0.0"
+    },
+    {
+      "id": "G0924-F19",
+      "ticker": "TOST",
+      "observed_at": "2026-09-24T15:14:36+09:00",
+      "event_date": "2026-06-30",
+      "category": "cash_flow",
+      "fact": "Q2 2026 free cash flow was USD 130 million versus USD 208 million a year earlier.",
+      "source_id": "G0924-TOST-Q2",
+      "valid_as_of": "2026-09-24T15:14:36+09:00",
+      "freshness_class": "PERIODIC",
+      "status": "active",
+      "schema_version": "1.0.0"
+    },
+    {
+      "id": "G0924-F20",
+      "ticker": "TOST",
+      "observed_at": "2026-09-24T15:14:36+09:00",
+      "event_date": "2026-06-30",
+      "category": "working_capital",
+      "fact": "Q2 cash-flow inventory movement consumed USD 81 million, versus an USD 8 million contribution in Q2 2025.",
+      "source_id": "G0924-TOST-Q2",
+      "valid_as_of": "2026-09-24T15:14:36+09:00",
+      "freshness_class": "PERIODIC",
+      "status": "active",
+      "schema_version": "1.0.0"
+    },
+    {
+      "id": "G0924-F21",
+      "ticker": "IOT",
+      "observed_at": "2026-09-24T15:31:00+09:00",
+      "event_date": "2026-09-03",
+      "category": "cash_flow_guidance",
+      "fact": "Management expects FY2027 free cash flow margin to be approximately 100 basis points lower than FY2026, primarily because stronger growth requires more IoT devices, the company is proactively purchasing inventory, and second-half supply-chain costs are elevated.",
+      "source_id": "G0924-IOT-TRANSCRIPT",
+      "valid_as_of": "2026-09-24T15:31:00+09:00",
+      "freshness_class": "FAST",
+      "status": "active",
+      "schema_version": "1.0.0",
+      "claim_type": "company_forecast"
+    },
+    {
+      "id": "G0924-F22",
+      "ticker": "IOT",
+      "observed_at": "2026-09-24T15:31:00+09:00",
+      "event_date": "2026-09-04",
+      "category": "price_reaction",
+      "fact": "On the first regular session after the Q2 release, IOT opened at USD 44.90, traded as high as USD 45.12 and closed at USD 40.20, up 3.74% from the prior regular-session close of USD 38.75. Reports of an approximately 13% post-earnings jump referred to premarket trading rather than the regular-session closing return.",
+      "source_id": "G0924-IOT-PRICE",
+      "valid_as_of": "2026-09-24T15:31:00+09:00",
+      "freshness_class": "REALTIME",
+      "status": "active",
+      "schema_version": "1.0.0"
+    }
   ],
   "derived_metrics": [
-    {"ticker":"IOT","metric":"price_over_FY2027_company_non_GAAP_EPS_midpoint","value":50.75,"formula":"39.08 / ((0.76 + 0.78) / 2)","source_ids":["G0924-IOT-PRICE","G0924-IOT-SEC"],"warning":"Company-adjusted forecast multiple, not GAAP trailing P/E and not evidence that the stock is cheap."},
-    {"ticker":"CLS","metric":"September18_to_September23_close_return_pct","value":8.78,"formula":"(361.84 / 332.63 - 1) * 100","source_ids":["G0924-CLS-PRICE"]},
-    {"ticker":"CLS","metric":"price_over_pre_offering_FY2026_adjusted_EPS_guidance","value":32.02,"formula":"361.84 / 11.30","source_ids":["G0924-CLS-PRICE","G0924-CLS-Q2","G0924-CLS-OFFERING"],"warning":"Illustrative arithmetic only. The EPS forecast assumed no further issuance and predates the August offering. Do not treat this as verified post-offering forward P/E."},
-    {"ticker":"TOST","metric":"Q2_GAAP_operating_income_growth_pct","value":90.0,"formula":"(152 / 80 - 1) * 100","source_ids":["G0924-TOST-Q2"]},
-    {"ticker":"TOST","metric":"Q2_free_cash_flow_change_pct","value":-37.5,"formula":"(130 / 208 - 1) * 100","source_ids":["G0924-TOST-Q2"]}
+    {
+      "ticker": "IOT",
+      "metric": "price_over_FY2027_company_non_GAAP_EPS_midpoint",
+      "value": 50.75,
+      "formula": "39.08 / ((0.76 + 0.78) / 2)",
+      "source_ids": [
+        "G0924-IOT-PRICE",
+        "G0924-IOT-SEC"
+      ],
+      "warning": "Company-adjusted forecast multiple, not GAAP trailing P/E and not evidence that the stock is cheap."
+    },
+    {
+      "ticker": "CLS",
+      "metric": "September18_to_September23_close_return_pct",
+      "value": 8.78,
+      "formula": "(361.84 / 332.63 - 1) * 100",
+      "source_ids": [
+        "G0924-CLS-PRICE"
+      ]
+    },
+    {
+      "ticker": "CLS",
+      "metric": "price_over_pre_offering_FY2026_adjusted_EPS_guidance",
+      "value": 32.02,
+      "formula": "361.84 / 11.30",
+      "source_ids": [
+        "G0924-CLS-PRICE",
+        "G0924-CLS-Q2",
+        "G0924-CLS-OFFERING"
+      ],
+      "warning": "Illustrative arithmetic only. The EPS forecast assumed no further issuance and predates the August offering. Do not treat this as verified post-offering forward P/E."
+    },
+    {
+      "ticker": "TOST",
+      "metric": "Q2_GAAP_operating_income_growth_pct",
+      "value": 90,
+      "formula": "(152 / 80 - 1) * 100",
+      "source_ids": [
+        "G0924-TOST-Q2"
+      ]
+    },
+    {
+      "ticker": "TOST",
+      "metric": "Q2_free_cash_flow_change_pct",
+      "value": -37.5,
+      "formula": "(130 / 208 - 1) * 100",
+      "source_ids": [
+        "G0924-TOST-Q2"
+      ]
+    }
   ],
   "assessments": [
-    {"ticker":"IOT","priority":1,"decision":"CONDITIONAL_SMALL_STARTER","thesis":"Thirty-percent revenue/ARR growth, multi-product enterprise adoption and improving free cash flow provide a more verifiable growth thesis than AI branding alone.","caveats":["Valuation remains demanding at about 51 times company FY2027 non-GAAP EPS guidance midpoint.","GAAP operating margin is only 1%, not the 21% adjusted margin.","Q3 revenue growth guidance is 24%, below Q2's 30%; sustained 30% growth must not be assumed.","Price has not conclusively reversed its recent downtrend."],"entry_plan":"Consider a small initial tranche only if roughly USD 38-39 stabilizes. A reclaim and hold above USD 40-40.5 is stronger price confirmation. A regular-session close below roughly USD 37.7 invalidates this short-term setup pending reassessment.","thesis_break":"Material deterioration in recurring revenue growth together with reversal of profitability/cash-flow progress.","assessment_not_fact":true},
-    {"ticker":"CLS","priority":2,"decision":"AGGRESSIVE_PULLBACK_WATCH","thesis":"Fastest current reported revenue growth among the three; AI/cloud infrastructure demand and the October 27 event offer identifiable business drivers.","caveats":["Recent 8.78% gain over three sessions increases the risk of chasing.","August equity issuance requires post-offering per-share earnings analysis.","A different ticker does not remove exposure to the same AI infrastructure investment cycle.","Capital spending, working capital, customer concentration and program execution remain risks."],"entry_plan":"Prefer observing a pullback toward roughly USD 345-355 that stabilizes, or a multi-session consolidation; do not assume the range is a floor. A close below roughly USD 340 cancels this pullback setup pending reassessment.","thesis_break":"Customer deployment delays or forecast cuts that materially weaken the expected revenue and margin ramp.","assessment_not_fact":true},
-    {"ticker":"TOST","priority":3,"decision":"WAIT_FOR_PRICE_AND_CASH_FLOW_CONFIRMATION","thesis":"Restaurant/retail software and payments platform has 25% growth in its annualized recurring run-rate and a 90% increase in GAAP operating income.","caveats":["Free cash flow declined 37.5% year over year despite higher accounting profit.","Inventory absorbed cash; one quarter does not establish a permanent impairment, but recovery needs verification.","Recent lower price lows mean a fundamental rebound thesis is not yet a confirmed short-term reversal.","Restaurant spending, payment volume, merchant churn and competition remain operating risks."],"entry_plan":"Prefer a reclaim and hold of roughly USD 30.5-31 rather than blindly buying below USD 30. A renewed break below roughly USD 28.7 would invalidate a rebound setup.","thesis_break":"Slowing location/payment growth combined with persistent cash-conversion deterioration.","assessment_not_fact":true}
+    {
+      "ticker": "IOT",
+      "priority": 1,
+      "decision": "CONDITIONAL_SMALL_STARTER",
+      "thesis": "Thirty-percent revenue/ARR growth, multi-product enterprise adoption and improving operating leverage provide a verifiable growth thesis; Q2 free cash flow improved year over year, but full-year free-cash-flow margin guidance is a near-term headwind and is not used as an unqualified bullish pillar.",
+      "caveats": [
+        "Valuation remains demanding at about 51 times company FY2027 non-GAAP EPS guidance midpoint.",
+        "GAAP operating margin is only 1%, not the 21% adjusted margin.",
+        "Q3 revenue growth guidance is 24%, below Q2's 30%; sustained 30% growth must not be assumed.",
+        "Management expects FY2027 free-cash-flow margin to be about 100 bps below FY2026 because of higher device purchases, proactive inventory build and elevated second-half supply-chain costs.",
+        "The post-earnings reaction included an approximately 13% premarket jump and a USD 44.90 opening, but the stock closed that session at USD 40.20 and later round-tripped toward the pre-earnings close. USD 38-39 should therefore be described as a round-trip/retest zone, not simply a generic pullback or an earnings-gap high."
+      ],
+      "entry_plan": "Treat roughly USD 38-39 as a retest/round-trip area near the pre-earnings regular-session close, not as proof of cheapness. Prefer stabilization there or a reclaim and hold above roughly USD 40-40.5 before increasing exposure. A regular-session close below roughly USD 37.7 invalidates this short-term setup pending reassessment.",
+      "thesis_break": "Material deterioration in recurring-revenue growth or operating leverage, especially if the guided free-cash-flow pressure persists beyond the stated inventory/supply-chain normalization thesis.",
+      "assessment_not_fact": true
+    },
+    {
+      "ticker": "CLS",
+      "priority": 2,
+      "decision": "AGGRESSIVE_PULLBACK_WATCH",
+      "thesis": "Fastest current reported revenue growth among the three; AI/cloud infrastructure demand and the October 27 event offer identifiable business drivers.",
+      "caveats": [
+        "Recent 8.78% gain over three sessions increases the risk of chasing.",
+        "August equity issuance requires post-offering per-share earnings analysis.",
+        "A different ticker does not remove exposure to the same AI infrastructure investment cycle.",
+        "Capital spending, working capital, customer concentration and program execution remain risks."
+      ],
+      "entry_plan": "Prefer observing a pullback toward roughly USD 345-355 that stabilizes, or a multi-session consolidation; do not assume the range is a floor. A close below roughly USD 340 cancels this pullback setup pending reassessment.",
+      "thesis_break": "Customer deployment delays or forecast cuts that materially weaken the expected revenue and margin ramp.",
+      "assessment_not_fact": true
+    },
+    {
+      "ticker": "TOST",
+      "priority": 3,
+      "decision": "WAIT_FOR_PRICE_AND_CASH_FLOW_CONFIRMATION",
+      "thesis": "Restaurant/retail software and payments platform has 25% growth in its annualized recurring run-rate and a 90% increase in GAAP operating income.",
+      "caveats": [
+        "Free cash flow declined 37.5% year over year despite higher accounting profit.",
+        "Inventory absorbed cash; one quarter does not establish a permanent impairment, but recovery needs verification.",
+        "Recent lower price lows mean a fundamental rebound thesis is not yet a confirmed short-term reversal.",
+        "Restaurant spending, payment volume, merchant churn and competition remain operating risks."
+      ],
+      "entry_plan": "Prefer a reclaim and hold of roughly USD 30.5-31 rather than blindly buying below USD 30. A renewed break below roughly USD 28.7 would invalidate a rebound setup.",
+      "thesis_break": "Slowing location/payment growth combined with persistent cash-conversion deterioration.",
+      "assessment_not_fact": true
+    }
   ],
-  "summary_ko": "우선 검토 IOT, 공격적인 성장 후보 CLS는 눌림 대기, TOST는 반등 및 현금흐름 확인 전 관찰. 좋은 기업과 지금 매수하기 좋은 주식을 구분하며, 단기 상승이나 30% 수익을 보장하지 않는다."
+  "summary_ko": "IOT 정정: Q2 FCF 증가는 사실이지만 FY2027 FCF 마진은 전년 대비 약 100bp 하락 가이던스이므로 현금흐름 개선을 무조건적 매수 근거로 사용하지 않는다. $38-39는 실적 급등 후 단순 눌림이라기보다 실적 전 종가 부근으로 되돌아온 재시험 구간으로 본다. CLS는 눌림 대기, TOST는 반등 및 현금흐름 확인 전 관찰.",
+  "corrected_at": "2026-09-24T15:31:00+09:00",
+  "correction_note": "IOT assessment corrected after primary-source earnings-call review: Q2 free cash flow improved, but FY2027 free-cash-flow margin is expected to be about 100 bps below FY2026. The cash-flow thesis is therefore a near-term headwind, not an unqualified improvement thesis. Earnings-day price reaction is also distinguished between premarket/opening gap and regular-session close."
 }
